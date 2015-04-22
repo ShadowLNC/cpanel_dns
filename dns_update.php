@@ -1,5 +1,5 @@
 <?php
-require_once("/classdns.php");
+require_once("./classdns.php");
 $config = parse_ini_file("config");
 $zones = new zone_records($config["cpanel_user"], $config["cpanel_password"], $config["cpanel_authdomain"], $config["cpanel_dnsdomain"]);
 
