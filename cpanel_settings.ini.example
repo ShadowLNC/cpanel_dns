@@ -1,0 +1,16 @@
+cpanel_user = "username"
+cpanel_password = "pa55w0rd"
+
+; The domain hosting cPanel (where you login).
+; It must serve the cPanel API on port 2083 (https).
+cpanel_authdomain = "example.com"
+
+
+; The root domain for which DNS records are being read/written.
+cpanel_dnsdomain = "example.com"
+
+; Must return a file matching regex "Current IP Address: 0.0.0.0"
+checkip_url = "http://checkip.dyndns.org/"
+
+; The domain to be updated, note the trailing . because DNS needs a FQDN
+target_domain = "my.subdomain.example.com."

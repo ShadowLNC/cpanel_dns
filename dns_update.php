@@ -1,6 +1,6 @@
 <?php
 require_once("./classdns.php");
-$config = parse_ini_file("config");
+$config = parse_ini_file("cpanel_settings.ini");
 $zones = new zone_records($config["cpanel_user"], $config["cpanel_password"], $config["cpanel_authdomain"], $config["cpanel_dnsdomain"]);
 
 //$newip = file_get_contents($config["checkip_url"]); //use curl instead; this has a short timeout
